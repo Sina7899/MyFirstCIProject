@@ -1,8 +1,4 @@
-project:
-  name: MyFirstCIProject
-  version: 1.0.0
-  description: This is a basic configuration file for my first CI/CD project.
-  author: Sina Sami
+name: MyFirstCIProject
 
 on:
   push:
@@ -10,8 +6,7 @@ on:
       - main
 
 jobs:
-  name:
-    My_First_CI_Project:
+  test:
       runs-on: ubuntu-latest
 
       steps:
